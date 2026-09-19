@@ -155,7 +155,7 @@ details.guide summary{cursor:pointer;font-weight:600;color:var(--brand)}
 .cal-dims{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink-2)}
 .cal-dims label{display:flex;align-items:center;gap:4px}
 .cal-dims input{width:72px;padding:6px 8px}
-.cal-help{font-size:13px;background:var(--brand-soft);color:var(--ink);border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.cal-help{font-size:13px;background:var(--brand-soft);color:var(--ink);border-radius:8px;padding:8px 10px;margin-bottom:8px;min-height:4.9em;box-sizing:border-box}
 .cal-foot{position:sticky;bottom:-14px;background:var(--surface);border-top:1px solid var(--line);margin:12px -16px -14px;padding:10px 16px;display:flex;gap:8px;justify-content:flex-end}
 .marks-list{max-height:220px;overflow:auto;font-size:13px}
 .marks-list div{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:3px 0}
@@ -893,7 +893,8 @@ const NUM_WORDS = [
   ['واحد|الاول|الاولي|واحده', 1], ['اثنين|اثنان|الثاني|الثانيه|اثنتين', 2], ['ثلاثه|ثلاث|الثالث|الثالثه', 3], ['اربعه|اربع|الرابع|الرابعه', 4],
   ['خمسه|خمس|الخامس|الخامسه', 5], ['سته|ست|السادس|السادسه', 6], ['سبعه|سبع|السابع|السابعه', 7], ['ثمانيه|ثماني|ثمان|الثامن|الثامنه', 8],
   ['تسعه|تسع|التاسع|التاسعه', 9], ['عشره|عشر|العاشر|العاشره', 10], ['احدي عشر|احد عشر|الحادي عشر', 11], ['اثنا عشر|اثني عشر|الثاني عشر', 12],
-  ['ثلاثه عشر|ثلاث عشره|الثالث عشر', 13], ['اربعه عشر|اربع عشره|الرابع عشر', 14], ['خمسه عشر|خمس عشره|الخامس عشر', 15]
+  ['ثلاثه عشر|ثلاث عشره|الثالث عشر', 13], ['اربعه عشر|اربع عشره|الرابع عشر', 14], ['خمسه عشر|خمس عشره|الخامس عشر', 15],
+  ['عشرين|العشرين', 20], ['ثلاثين', 30], ['اربعين', 40], ['خمسين', 50]
 ];
 function wordToNum(w) {
   w = normAr(w).trim();
